@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" 
+    android:background="@drawable/zj_bg2"
+    android:layout_gravity="center_vertical|center_horizontal"
+    android:gravity="center_horizontal"
+    >
+    <!--  android:background="@drawable/process_bg" -->
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@anim/progress_7png2"
+        />
+	<TextView 
+	    android:id="@+id/define_progress_msg"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center_horizontal"
+	    android:textSize="12sp"
+	    android:layout_marginTop="6dp"
+	    android:singleLine="true"
+	    android:ellipsize="end"
+	    android:textColor="@color/pv_black"
+	    android:text="......"
+	    />
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/zj_bg_search"
+                android:orientation="vertical"
+                android:padding="6dp" >
+
+                <ImageView
+                    android:id="@+id/pv_pz02_video_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/pv_t2" />
+
+                <TextView
+                     android:id="@+id/pv_pz02_video_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:text="S and C"
+                    android:textSize="22sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                     android:id="@+id/pv_pz02_video_sessioncount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:text="1 Sessions"
+                    android:textColor="@color/pv_green"
+                    android:textStyle="normal" />
+
+                <TextView
+                     android:id="@+id/pv_pz02_video_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:text="1 hours 45 min"
+                    android:textColor="@color/pv_green"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+</RelativeLayout>

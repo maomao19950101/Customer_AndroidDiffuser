@@ -1,0 +1,184 @@
+<RelativeLayout 
+     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pv_welcome_symptom_bg"
+    android:orientation="horizontal"
+    android:weightSum="1080" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:layout_weight="400"
+        android:orientation="vertical"
+        android:weightSum="1920" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="140" />
+
+        <ImageButton
+             android:id="@+id/pv_symptom_btn10"
+            android:layout_width="100dp"
+            android:layout_height="0dp"
+            android:layout_gravity="right"
+            android:layout_weight="86"
+            android:background="@null"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1692" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="6080"
+        android:orientation="vertical"
+        android:weightSum="1920" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="140" />
+
+        <ImageButton
+            android:id="@+id/pv_symptom_btn1"
+            android:layout_width="100dp"
+            android:layout_height="0dp"
+            android:layout_weight="86"
+            android:background="@null"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="16" />
+
+        <ImageButton
+             android:id="@+id/pv_symptom_btn2"
+            android:layout_width="100dp"
+            android:layout_height="0dp"
+            android:layout_weight="86"
+            android:background="@null"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="25" />
+
+        <ImageButton
+             android:id="@+id/pv_symptom_btn3"
+            android:layout_width="100dp"
+            android:layout_height="0dp"
+            android:layout_weight="86"
+            android:background="@null"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="58" />
+
+        <ImageButton
+             android:id="@+id/pv_symptom_btn4"
+            android:layout_width="100dp"
+            android:layout_height="0dp"
+            android:layout_weight="86"
+            android:background="@null"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="126" />
+
+        <ImageButton
+             android:id="@+id/pv_symptom_btn5"
+            android:layout_width="100dp"
+            android:layout_height="0dp"
+            android:layout_weight="86"
+            android:background="@null"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="170" />
+
+        <ImageButton
+             android:id="@+id/pv_symptom_btn6"
+            android:layout_width="100dp"
+            android:layout_height="0dp"
+            android:layout_weight="86"
+            android:background="@null"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="100" />
+
+        <ImageButton
+             android:id="@+id/pv_symptom_btn7"
+            android:layout_width="100dp"
+            android:layout_height="0dp"
+            android:layout_weight="86"
+            android:background="@null"
+             />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10" />
+
+        <ImageButton
+             android:id="@+id/pv_symptom_btn8"
+            android:layout_width="100dp"
+            android:layout_height="0dp"
+            android:layout_weight="86"
+            android:background="@null"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="86" />
+
+        <ImageButton
+             android:id="@+id/pv_symptom_btn9"
+            android:layout_width="100dp"
+            android:layout_height="0dp"
+            android:layout_weight="86"
+            android:background="@null"
+            />
+<View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="100" />
+
+        <ImageButton
+             android:id="@+id/pv_symptom_btn11"
+            android:layout_width="100dp"
+            android:layout_height="0dp"
+            android:layout_weight="86"
+            android:background="@null"
+            android:layout_marginLeft="60dp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="233" />
+    </LinearLayout>
+
+</LinearLayout>
+</RelativeLayout>

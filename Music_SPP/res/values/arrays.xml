@@ -1,0 +1,109 @@
+<resources>
+    
+    <string-array name="oils_local_list">
+         <item>Basil, Sweet</item>                          
+  <item>Bay Laurel</item>				
+  <item>Bergamot</item>			
+  <item>Cedarwood</item>			
+  <item>German Chamomile</item>	
+  <item>Roman Chamomile</item>
+  <item>Cinnamon</item>
+  <item>Cistus (Rockrose)</item>
+  <item>Clary Sage</item>
+  <item>Copaiba</item>
+  <item>Cypress</item>
+  <item>Eucalyptus Globulus</item>
+  <item>Eucalyptus Radiata</item>
+  <item>Fennel</item>
+  <item>Frankincense</item>
+  <item>Geranium</item>
+  <item>Grapefruit</item> 
+  <item>Helichrysum</item>
+  <item>Lavender</item>
+  <item>Lemon</item>
+  <item>Lemongrass</item> 
+  <item>Marjoram</item>
+  <item>Myrrh</item>
+  <item>MQV/Niaouli</item>
+  <item>Orange, Sweet</item>
+  <item>Oregano</item>
+  <item>Palmarosa</item>
+  <item>Patchouli</item>
+  <item>Peppermint</item>
+  <item>Pine (Common)</item>
+  <item>Rose</item>
+  <item>Rosemary</item>
+  <item>Sage (Dalmation)</item>
+  <item>Australian Sandalwood</item>
+  <item>Spearmint</item>
+    </string-array>
+    
+<string-array name="brainsystem">
+        <item>Anger </item>
+        <item>Anxiety </item>
+        <item>Calming </item>
+        <item>Creativity</item>
+        <item>Depression</item>
+        <item>Headache</item>
+        <item>Relax and Sleep</item>
+        <item>Stress Tension Headache</item>
+    </string-array>
+     <string-array name="digestivesystem">
+        <item>Bloating </item>
+        <item>Constipation </item>
+        <item>Cramping</item>
+        <item>Digestive Headache</item>
+        <item>Nausea</item>
+        <item>Nausea / Digestive</item>
+    </string-array>
+    
+    <string-array name="heartsystem">
+        <item>Cardio Support </item>
+        <item>Heart Palpitations </item>
+    </string-array>
+    
+    <string-array name="musculebone">
+        <item>After Workout </item>
+        <item>Arthritis </item>
+        <item>Back Pain</item>
+        <item>Diabetic Pain</item>
+        <item>Fatigue</item>
+        <item>Fibromyalgia</item>
+        <item >Inflammation</item>
+    </string-array>
+    
+    <string-array name="other">
+        <item>Appetite Suppression</item>
+        <item>Fat Burner</item>
+        <item>Immune Support </item>
+        <item>Mosquitos</item>
+        <item>Party/Celebration</item>
+        <item>Remove Odors (Uplifting Scent)</item>
+        <item>Yoga</item>
+    </string-array>
+    <string-array name="reproductiveandhormone">
+        <item>Irritability</item>
+        <item>Menopause</item>
+        <item>Menstrual Cramps</item>
+        <item>PMS</item>
+    </string-array>
+    <string-array name="respiratorysystem">
+        <item>Antiviral</item>
+        <item>Colds</item>
+        <item>Flu</item>
+        <item>General Anti-Septic</item>
+        <item>Lung congestion</item>
+        <item>Lung Congestion/Bronchitis</item>
+        <item>Lung/Nasal Congestion</item>
+        <item>Nasal congestion</item>
+    </string-array>
+    <string-array name="skin">
+        <item>Acne</item>
+        <item>Anti-Aging/Anti-Wrinkle </item>
+        <item>Balance</item>
+        <item>Rejuvenation</item>
+        <item>Sensitive/Anti-Inflammatorys</item>
+        <item>Wound and Healing</item>
+    </string-array>
+
+    </resources>

@@ -1,0 +1,144 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00000000"
+    android:orientation="vertical"
+     android:id="@+id/main"
+    tools:ignore="ContentDescription" >
+
+    <LinearLayout
+        android:id="@+id/pv_main_mist_menu_div"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_menu_height"
+        android:background="@color/bg_main"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/pv_main_mist_cycle_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/im_btn_bg"
+            android:src="@drawable/ic_mist_cycle" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+           />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+
+        <ImageButton
+            android:id="@+id/pv_main_mist_radom_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/im_btn_bg"
+            android:src="@drawable/ic_mist_radom" />
+    </LinearLayout>
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+<LinearLayout 
+    android:id="@+id/pv_main_mist_cycle_div"
+    android:layout_width="match_parent" 
+    android:layout_height="wrap_content" 
+    android:orientation="vertical"
+    android:visibility="gone"
+    >
+    <ImageButton
+       android:id="@+id/pv_main_mist_cycle_close_btn"
+           android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:padding="4dp"
+        android:src="@drawable/ic_close" 
+        android:background="@drawable/im_btn_bg"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="@dimen/height_itemdspace_main"
+        android:layout_marginTop="@dimen/height_itemdspace_main"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" 
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:text="@string/mist_duration"
+            android:textColor="@color/txt_main" />
+
+        <TextView
+                    android:id="@+id/layout_mist_cycle_et_duration"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="12"
+                    android:text="05:12"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:layout_weight="3"
+                    android:singleLine="true"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/txt_main" />
+    </LinearLayout>
+</LinearLayout>
+<LinearLayout 
+    android:id="@+id/pv_main_mist_random_div"
+    android:layout_width="match_parent" 
+    android:layout_height="wrap_content" 
+    android:orientation="vertical"
+    android:visibility="gone"
+    >
+    <ImageButton
+        android:id="@+id/pv_main_mist_random_close_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_gravity="right"
+        android:paddingLeft="30dp"
+        android:paddingRight="5dp"
+        android:paddingTop="10dp"
+        android:background="@drawable/im_btn_bg"
+        android:src="@drawable/ic_close" />
+
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="@dimen/height_itemdspace_main"
+        android:layout_marginTop="@dimen/height_itemdspace_main"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:text="@string/mist_interval_duration"
+            android:textColor="@color/txt_main" />
+
+        <TextView
+            android:id="@+id/layout_mist_radom_et_duration"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@null"
+            android:gravity="center_horizontal|center_vertical"
+             android:text="12"
+            android:singleLine="true"
+            android:textColor="@color/txt_main" />
+    </LinearLayout>
+</LinearLayout>
+</RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     >
+
+    <include layout="@layout/pv_inbase_header" />
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        >
+   <LinearLayout 
+       
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:layout_gravity="center_horizontal"
+       android:gravity="center_horizontal"
+       >
+       	<LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/slide_menu_item_bg"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp_10" >
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/pv_left_ot_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:text="Oil Treatments" />
+                </LinearLayout>
+        <LinearLayout
+           android:id="@+id/pv_five_type1"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="10dp"
+           android:background="@drawable/zj_bg_search"
+           android:orientation="vertical"
+           android:padding="6dp" >
+
+           <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="200dp"
+               android:src="@drawable/pv_t1" 
+               android:scaleType="centerCrop"/>
+           
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_vertical"
+               android:gravity="center_vertical"
+               android:lines="1"
+               android:ellipsize="end"
+               android:textSize="22sp"
+               android:textStyle="normal"
+               android:text="Inter 7" />
+           
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_vertical"
+               android:gravity="center_vertical"
+               android:lines="1"
+               android:ellipsize="end"
+               android:textStyle="normal"
+               android:text="7 Sessions" 
+               android:textColor="@color/pv_green"/>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_vertical"
+               android:gravity="center_vertical"
+               android:lines="1"
+               android:ellipsize="end"
+               android:textStyle="normal"
+               android:text="3 hours 45 min" 
+               android:textColor="@color/pv_green"/>
+       </LinearLayout>
+       <LinearLayout
+           android:id="@+id/pv_five_type2"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="10dp"
+           android:background="@drawable/zj_bg_search"
+           android:orientation="vertical"
+           android:padding="6dp" >
+
+           <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="200dp"
+               android:src="@drawable/pv_t2" 
+               android:scaleType="centerCrop"/>
+           
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_vertical"
+               android:gravity="center_vertical"
+               android:lines="1"
+               android:ellipsize="end"
+               android:textSize="22sp"
+               android:textStyle="normal"
+               android:text="Free Sleep" 
+               />
+           
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_vertical"
+               android:gravity="center_vertical"
+               android:lines="1"
+               android:ellipsize="end"
+               android:textStyle="normal"
+               android:text="2 Sessions" 
+               android:textColor="@color/pv_green"
+               />
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_vertical"
+               android:gravity="center_vertical"
+               android:lines="1"
+               android:ellipsize="end"
+               android:textStyle="normal"
+               android:text="4 hours 45 min" 
+               android:textColor="@color/pv_green"/>
+       </LinearLayout>
+       
+        <LinearLayout
+           android:id="@+id/pv_five_type3"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="10dp"
+           android:background="@drawable/zj_bg_search"
+           android:orientation="vertical"
+           android:padding="6dp" >
+
+           <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="200dp"
+               android:src="@drawable/pv_t3" 
+               android:scaleType="centerCrop"/>
+           
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_vertical"
+               android:gravity="center_vertical"
+               android:lines="1"
+               android:ellipsize="end"
+               android:textSize="22sp"
+               android:textStyle="normal"
+               android:text="Inter 9" />
+           
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_vertical"
+               android:gravity="center_vertical"
+               android:lines="1"
+               android:ellipsize="end"
+               android:textStyle="normal"
+               android:text="1 Sessions" 
+               android:textColor="@color/pv_green"/>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_vertical"
+               android:gravity="center_vertical"
+               android:lines="1"
+               android:ellipsize="end"
+               android:textStyle="normal"
+               android:text="1 hours 45 min" 
+               android:textColor="@color/pv_green"/>
+       </LinearLayout>
+
+   </LinearLayout>
+</ScrollView>
+</LinearLayout>

@@ -1,0 +1,305 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00000000"
+    android:orientation="vertical"
+    android:id="@+id/main"
+    tools:ignore="ContentDescription" >
+
+    <LinearLayout
+         android:id="@+id/pv_main_time_menu_div"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_menu_height"
+        android:background="@color/bg_main"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/pv_main_time_time_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/im_btn_bg"
+            android:src="@drawable/ic_main_time" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+           />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+	<ImageButton
+            android:id="@+id/pv_main_time_alarm_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/im_btn_bg"
+            android:src="@drawable/ic_time_timing" />
+        
+    </LinearLayout>
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+<LinearLayout 
+     android:id="@+id/pv_main_time_time_div"
+    android:layout_width="match_parent" 
+    android:layout_height="wrap_content" 
+    android:orientation="vertical"
+    android:visibility="gone"
+    >
+    <ImageButton
+        android:id="@+id/pv_main_time_time_close_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_gravity="right"
+        android:paddingLeft="30dp"
+        android:paddingRight="5dp"
+        android:paddingTop="10dp"
+        android:background="@drawable/im_btn_bg"
+        android:src="@drawable/ic_close" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="@dimen/height_itemdspace_main"
+        android:layout_marginTop="@dimen/height_itemdspace_main"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:text="@string/clock_duration"
+            android:textColor="@color/txt_main" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3" >
+
+            <RelativeLayout
+                android:id="@+id/layout_time_timelayout_duration"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+
+                <TextView
+                    android:id="@+id/layout_time_timeet_duration"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:hint="90"
+                    android:text="12:12"
+                    android:singleLine="true"
+                    android:textColor="@color/txt_main" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_divider_main"
+                android:layout_alignParentBottom="true"
+                android:background="@color/divider_main" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="@dimen/height_itemdspace_main"
+        android:layout_marginTop="@dimen/height_itemdspace_main"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" 
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/clock_elapsed"
+            android:textColor="@color/txt_main" />
+    </LinearLayout>
+</LinearLayout>
+<LinearLayout 
+    android:id="@+id/pv_main_time_alarm_div"
+    android:layout_width="match_parent" 
+    android:layout_height="wrap_content" 
+    android:orientation="vertical"
+    android:visibility="gone"
+    >
+    <ImageButton
+        android:id="@+id/pv_main_time_alarm_close_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_gravity="right"
+        android:paddingLeft="30dp"
+        android:paddingRight="5dp"
+        android:paddingTop="10dp"
+        android:background="@drawable/im_btn_bg"
+        android:src="@drawable/ic_close" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="@dimen/height_itemdspace_main"
+        android:layout_marginTop="@dimen/height_itemdspace_main"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/StartTime"
+            android:textColor="@color/txt_main" />
+
+        <TextView
+            android:id="@+id/pv_clock_start_time_iv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_horizontal|center_vertical"
+            android:hint="12:12"
+            android:singleLine="true"
+            android:text="12:12"
+            android:textColor="@color/txt_main" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="@dimen/height_itemdspace_main"
+        android:layout_marginTop="@dimen/height_itemdspace_main"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/EndTime"
+            android:textColor="@color/txt_main" />
+
+        <TextView
+            android:id="@+id/pv_clock_end_time_iv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_horizontal|center_vertical"
+            android:hint="12:12"
+            android:singleLine="true"
+            android:text="12:12"
+            android:textColor="@color/txt_main" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="@dimen/height_itemdspace_main"
+        android:layout_marginTop="@dimen/height_itemdspace_main"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" 
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/DelaySoundStart"
+            android:textColor="@color/txt_main" />
+
+        <TextView
+            android:id="@+id/pv_clock_delay_sound_start_iv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_horizontal|center_vertical"
+            android:hint="12:12"
+            android:singleLine="true"
+            android:text="12:12"
+            android:textColor="@color/txt_main" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="@dimen/height_itemdspace_main"
+        android:layout_marginTop="@dimen/height_itemdspace_main"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" 
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/DelayMistStart"
+            android:textColor="@color/txt_main" />
+
+        <TextView
+             android:id="@+id/pv_clock_delay_mist_start_iv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_horizontal|center_vertical"
+            android:hint="12:12"
+            android:singleLine="true"
+            android:text="12:12"
+            android:textColor="@color/txt_main" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="@dimen/height_itemdspace_main"
+        android:layout_marginTop="@dimen/height_itemdspace_main"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" 
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/DelayLightStart"
+            android:textColor="@color/txt_main" />
+
+        <TextView
+             android:id="@+id/pv_clock_delay_light_start_iv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_horizontal|center_vertical"
+            android:hint="12:12"
+            android:singleLine="true"
+            android:text="12:12"
+            android:textColor="@color/txt_main" />
+    </LinearLayout>
+</LinearLayout>
+</RelativeLayout>
+</LinearLayout>

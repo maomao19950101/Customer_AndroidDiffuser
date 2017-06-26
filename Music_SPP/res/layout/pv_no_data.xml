@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/showconstantdataDiv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/pv_no_data_recommend"
+            android:textColor="@color/pv_gray" />
+
+        <Button
+            android:id="@+id/reloadthebtn"
+            android:layout_width="90dp"
+            android:layout_height="36dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/pv_normal_btn"
+            android:padding="6dp"
+            android:text="@string/reloadthe"
+            android:textColor="@color/pv_white" 
+            android:visibility="gone"/>
+    </LinearLayout>
+

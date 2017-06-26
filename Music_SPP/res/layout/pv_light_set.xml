@@ -1,0 +1,148 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/all_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/pv_inbase_header" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <ImageView
+        android:id="@+id/pv_light_onoff_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:src="@drawable/pv_light_on" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/x44"
+        android:layout_marginRight="@dimen/x44"
+        android:layout_weight="1"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/pv_light_order_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/im_btn_bg"
+            android:src="@drawable/ic_mist_cycle" />
+
+        <ImageButton
+            android:id="@+id/pv_light_random_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/im_btn_bg"
+            android:src="@drawable/ic_mist_radom" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x44"
+        android:layout_marginRight="@dimen/x44"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/pv_voice_sub_iv"
+            android:layout_width="@dimen/x30"
+            android:layout_height="@dimen/x30"
+            android:layout_marginRight="@dimen/x5"
+            android:src="@drawable/pv_light_weak" />
+
+        <SeekBar
+            android:id="@+id/sb_lightness_sb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="10"
+            android:maxHeight="2dp"
+            android:minHeight="2dp"
+            android:padding="10dp"
+            android:progressDrawable="@drawable/seekbar_img"
+            android:thumb="@drawable/v_mediap_seekbar_thumb" />
+
+        <ImageView
+            android:id="@+id/pv_voice_add_iv"
+            android:layout_width="@dimen/x30"
+            android:layout_height="@dimen/x30"
+            android:layout_marginLeft="@dimen/x5"
+            android:src="@drawable/pv_light_glare" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6" />
+
+    <LinearLayout
+        android:id="@+id/pv_product_function_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginRight="@dimen/x30"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/pv_colorpicker_btn"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:background="@drawable/pv_colorpicker_btn"
+            android:button="@null" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/pv_cameracolor_btn"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:background="@drawable/pv_cameracolor_btn"
+            android:button="@null" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/pv_rgb_fav_btn"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:background="@drawable/pv_rgb_fav_btn"
+            android:button="@null" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/pv_light_default_btn"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:background="@drawable/pv_light_default_btn"
+            android:button="@null" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5" />
+</LinearLayout>

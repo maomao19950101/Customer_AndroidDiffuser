@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/pv_main_actionbar"></include>
+        <!-- 下层显示的主要内容 -->
+        <fragment
+            android:id="@+id/main_content_frame"
+            android:name="cn.mb.fragment.Main2Fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:scrollbars="vertical"></fragment>
+    </LinearLayout>
+
+
+    <!-- 左侧滑动栏 -->
+    <include layout="@layout/main_left_menu"/>
+
+</android.support.v4.widget.DrawerLayout>

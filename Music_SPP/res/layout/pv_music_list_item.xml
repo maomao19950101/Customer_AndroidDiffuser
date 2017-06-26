@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y60"
+    android:background="@drawable/list_item_selector" >
+
+    <TextView
+        android:id="@+id/tvSongName"
+        android:layout_width="@dimen/x320"
+        android:layout_height="@dimen/y30"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:text="歌曲"
+        android:textColor="@color/pv_gray_95" />
+
+    <TextView
+        android:id="@+id/tvTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/y30"
+        android:layout_alignParentRight="true"
+        android:layout_alignRight="@id/tvSongName"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:paddingRight="10dp"
+        android:singleLine="true"
+        android:text="22222"
+         android:textSize="14sp"
+        android:textColor="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/tvArtistAlbum"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y30"
+        android:layout_below="@id/tvSongName"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:text="名称 作家"
+        android:textColor="@color/pv_gray_95"
+        android:textSize="12sp"
+        android:gravity="center_vertical"
+       />
+
+</RelativeLayout>

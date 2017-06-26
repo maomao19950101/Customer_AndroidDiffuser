@@ -1,0 +1,217 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/pv_inbase_header" >
+    </include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical" >
+
+        <ImageButton
+            android:id="@+id/pv_video_set_pay_iv"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@color/pv_black"
+            android:src="@drawable/v_pause" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/pv_video_set_pay_iv"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/pv_video_set_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="Inner 7: day1"
+                />
+
+            <SeekBar
+                android:id="@+id/pv_video_set_sb"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:layout_gravity="center_vertical"
+                android:maxHeight="2dp"
+                android:minHeight="2dp"
+                android:progressDrawable="@drawable/seekbar_black_white"
+                android:thumb="@null" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/pv_video_set_name_iv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right"
+        android:gravity="right"
+        android:text="11111"
+        android:textSize="9sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical" >
+
+        <include layout="@layout/line_menu" />
+
+        <RelativeLayout
+            android:id="@+id/pv_main_motor_div"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp" >
+
+            <Button
+                android:id="@+id/pv_main_moror_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/im_btn_bg"
+                android:drawableLeft="@drawable/pv_left_dc_icon"
+                android:gravity="left|center_vertical"
+                android:text="@string/pv_menu_oils" />
+
+            <ToggleButton
+                android:id="@+id/pv_main_motor_tg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/toggle_button"
+                android:textOff=""
+                android:textOn="" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/pv_main_mist_div"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp" >
+
+            <Button
+                android:id="@+id/pv_main_mist_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/im_btn_bg"
+                android:drawableLeft="@drawable/pv_main_mist"
+                android:gravity="left|center_vertical"
+                android:text="@string/pv_menu_mist" />
+
+            <ToggleButton
+                android:id="@+id/pv_main_mist_tg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/toggle_button"
+                android:textOff=""
+                android:textOn="" />
+        </RelativeLayout>
+
+        <include layout="@layout/line_menu" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp" >
+
+            <Button
+                android:id="@+id/pv_main_sound_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/im_btn_bg"
+                android:drawableLeft="@drawable/pv_main_sound"
+                android:gravity="left|center_vertical"
+                android:text="@string/pv_menu_sound" />
+
+            <ToggleButton
+                android:id="@+id/pv_main_sound_tg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/toggle_button"
+                android:textOff=""
+                android:textOn="" />
+        </RelativeLayout>
+
+        <include layout="@layout/line_menu" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp" >
+
+            <Button
+                android:id="@+id/pv_main_light_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/im_btn_bg"
+                android:drawableLeft="@drawable/pv_main_light"
+                android:gravity="left|center_vertical"
+                android:text="@string/pv_menu_light" />
+
+            <ToggleButton
+                android:id="@+id/pv_main_light_tg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/toggle_button"
+                android:textOff=""
+                android:textOn="" />
+        </RelativeLayout>
+
+        <include layout="@layout/line_menu" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp" >
+
+            <Button
+                android:id="@+id/pv_main_time_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/im_btn_bg"
+                android:drawableLeft="@drawable/pv_main_clock"
+                android:gravity="left|center_vertical"
+                android:text="@string/pv_menu_time" />
+
+            <ToggleButton
+                android:id="@+id/pv_main_time_tg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/toggle_button"
+                android:textOff=""
+                android:textOn="" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

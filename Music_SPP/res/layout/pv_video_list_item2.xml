@@ -1,0 +1,121 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="4dp" >
+
+        <ImageView
+            android:id="@+id/pv_pz02_video_play_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/pv_video_oils_icon" />
+
+        <TextView
+            android:id="@+id/pv_pz02_video_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:text="Day1 : Faith" />
+    </RelativeLayout>
+
+    <include layout="@layout/line_menu" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="4dp" >
+
+         <ImageView
+             android:id="@+id/pv_pz02_oil1_iv"
+            android:layout_marginLeft="40dp"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/pv_img_defult" 
+            android:visibility="invisible"
+            />
+
+        <TextView
+            android:id="@+id/pv_pz02_oil1_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:textColor="@color/pv_green_btn_bg"
+            android:layout_toRightOf="@id/pv_pz02_oil1_iv"
+            android:text="Day1 : Faith" />
+    </RelativeLayout>
+
+    <include layout="@layout/line_menu" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="4dp" >
+
+         <ImageView
+             android:id="@+id/pv_pz02_oil2_iv"
+            android:layout_marginLeft="40dp"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/pv_img_defult" 
+             android:visibility="invisible"
+            />
+
+        <TextView
+            android:id="@+id/pv_pz02_oil2_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:textColor="@color/pv_green_btn_bg"
+            android:layout_toRightOf="@id/pv_pz02_oil2_iv"
+            android:text="Day1 : Faith" />
+    </RelativeLayout>
+
+    <include layout="@layout/line_menu" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="4dp" >
+
+         <ImageView
+             android:id="@+id/pv_pz02_oil3_iv"
+            android:layout_marginLeft="40dp"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/pv_img_defult" 
+             android:visibility="invisible"
+            />
+
+        <TextView
+            android:id="@+id/pv_pz02_oil3_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:textColor="@color/pv_green_btn_bg"
+            android:layout_toRightOf="@id/pv_pz02_oil3_iv"
+            android:text="Day1 : Faith" />
+    </RelativeLayout>
+
+</LinearLayout>

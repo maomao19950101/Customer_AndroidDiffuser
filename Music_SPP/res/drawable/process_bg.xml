@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?> 
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android"> 
+
+<solid android:color="#ffffff"/> <!-- 自定义背景颜色 -->
+
+<stroke android:width="0.5dp"  android:color="#DFDFDF"></stroke> 
+    
+
+<corners android:radius="1dp" /> <!-- 自定义角度 -->
+
+ <!--
+
+   //或者分步定义没个圆角。
+
+    <corners android:topLeftRadius="10dp"   
+
+     android:topRightRadius="10dp"
+
+     android:bottomRightRadius="10dp"      
+
+     android:bottomLeftRadius="10dp"/>  
+
+-->
+
+</shape> 

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <style name="StatusBarBackground">
+        <item name="android:background">@color/pv_red_light</item>
+    </style>
+    <style name="MainTheme" parent="android:Theme">
+         <item name="android:windowTitleBackgroundStyle">@style/StatusBarBackground </item>
+        <item name="android:windowTitleSize">44dip</item>  
+    </style>
+
+
+</resources>

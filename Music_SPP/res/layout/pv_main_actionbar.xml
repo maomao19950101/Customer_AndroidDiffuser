@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_action_op"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:background="#00000000">
+
+    <ImageView
+        android:id="@+id/actionbar_left_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:src="@drawable/pv_main_menu" />
+
+    <TextView
+        android:id="@+id/sys_header_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:ellipsize="end"
+        android:gravity="center_horizontal"
+        android:maxLines="1"
+        android:text=""
+        android:textColor="@color/pv_black"
+        android:textStyle="normal" />
+
+    <ImageButton
+        android:id="@+id/pv_main_submenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/margin_right"
+        android:background="@drawable/im_btn_bg"
+        android:src="@drawable/pv_main_submenu" 
+         android:visibility="invisible"/>
+
+    <ImageButton
+        android:id="@+id/pv_main_fav"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/pv_main_submenu"
+        android:background="@drawable/im_btn_bg"
+        android:gravity="center_vertical"
+        android:padding="4dp"
+        android:src="@drawable/pv_main_fav"
+        android:text="RightBtn"
+        android:textColor="@color/pv_black" 
+        android:visibility="invisible"/>
+
+    <ImageButton
+        android:id="@+id/pv_main_share"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/pv_main_fav"
+        android:background="@drawable/im_btn_bg"
+        android:gravity="center_vertical"
+        android:padding="4dp"
+        android:src="@drawable/pv_main_share"
+        android:text="RightBtn"
+        android:textColor="@color/pv_black"
+        android:visibility="invisible" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/pv_gray" />
+</RelativeLayout>
+
+

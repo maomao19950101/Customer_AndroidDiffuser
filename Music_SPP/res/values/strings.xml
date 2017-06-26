@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Diffuser</string>
+    <string name="blankDesc"></string>
+    <string name="showconstantdata">Network data failed</string>
+    <string name="reloadthe">Reload</string>
+    <string name="prompt">prompt</string>
+    <string name="exit_app">Exit apps?</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="delete">Delete</string>
+    <string name="pv_no_data_recommend">No data~~</string>
+    <string name="src_exit_tip">Continuous press RETURN to exit?</string>
+    <string name="pv_five_power">Power</string>
+    <string name="pv_five_relax">Relax</string>
+    <string name="pv_five_meditation">Meditation</string>
+    <string name="pv_five_sleep">Sleep</string>
+    <string name="btn_cancle">Cancel</string>
+    <string name="btn_submit">Submit</string>
+ <string name="ble_error_101">Not support BlueTooth</string>
+    <string name="ble_error_102">Not support BLE</string>
+    <string name="ble_error_103">BlueTooth not activate </string>
+    <string name="ble_error_104">Device disconnected</string>
+    <string name="ble_error_105">Connecting device</string>
+    <string name="ble_error_106">Device found</string>
+    <string name="ble_error_107">Device connected</string>
+    <string name="ble_error_108">Device is ready </string>
+    <string name="ble_error_109">Device disconnecting</string>
+    <string name="ble_error_263">Acquire properties, NULL result</string>
+    <string name="ble_error_264">Connection time out</string>
+    <string name="ble_error_unKnow">unKnow Error</string>
+    <string name="aidu_search_device_list">Diffuser Controls</string>
+    <string name="aidu_search_device_btn">Device Search</string>
+    <string name="aidu_device_connecting">Connecting&#8230;</string>
+    <string name="pv_mist_title">Mist</string>
+
+    <string name="pv_motor_01">Motor 01</string>
+    <string name="pv_motor_02">Motor 02</string>
+    <string name="pv_motor_03">Motor 03</string>
+    <string name="pv_motor_start_work">Start work time</string>
+    <string name="pv_motor_work_time">The work time</string>
+    <string name="pv_motor_deep_time">work or sleep time</string>
+    <string name="pv_load_more_data">More</string>
+    
+
+      
+      
+      <string name="pv_menu_5sence">&#160;&#160;Treatment</string>
+     <string name="pv_menu_oils">&#160;&#160;Oils</string>
+      <string name="pv_menu_mist">&#160;&#160;Mist</string>
+       <string name="pv_menu_sound">&#160;&#160;Sound</string>
+       <string name="pv_menu_light">&#160;&#160;Light</string>
+       <string name="pv_menu_time">&#160;&#160;Time</string>
+       
+       
+       <string name="pv_video_play_set">Treatment Settings</string>
+       
+        <string name="pv_video_oils_set">Add your oils</string>
+        <string name="pv_video_oils_bergamot">Bergamot</string>
+        <string name="pv_video_oils_lavendar">Lavendar</string>
+        <string name="pv_video_oils_patchouli">Patchouli</string>
+        <string name="pv_video_oils_desc">Add the following oils to your aroma diffuser for the Friends treatment</string>
+        <string name="pv_video_oils_desc2">Load the following oils into your aroma diffuser for the Friends treatment</string>
+        
+        <string name="pv_video_list_reset_icon">Reset</string>
+        <string name="pv_video_list_resume_icon">Resume</string>
+        
+        <string name="ssdk_facebook">Facebook</string>
+        <string name="ssdk_linked">Linked</string>
+        <string name="ssdk_tumblr">Tumblr</string>
+        <string name="ssdk_twitter">Twitter</string>
+        
+        <string name="pv_unknow_device">Unknow</string>
+        
+         <string name="pv_menu_onoff">&#160;&#160;Switch</string>
+        
+        
+        
+        
+          <string name="Preset">\tPreset</string>
+    <string name="Light">\tLight</string>
+    <string name="Mist">\tMist</string>
+    <string name="Sound">\tSound</string>
+    <string name="Time">\tTime</string>
+    <string name="Oil">\tOil</string>
+    <string name="Color">\tColor</string>
+    <string name="Brightness">\tBrightness</string>
+     <string name="Saturation">\tSaturation</string>
+    <string name="Source">\tSource</string>
+    <string name="Bookmark">\tBookmark</string>
+    <string name="mist_duration">\tDuration</string>
+    <string name="mist_interval_duration">\tInterval Duration</string>
+    <string name="Track">\tTrack</string>
+    <string name="Volume">\tVolume</string>
+    <string name="TimeRemaining">\tTime Remaining</string>
+    <string name="StartTime">\tStart Time</string>
+    <string name="EndTime">\tEnd Time</string>
+    <string name="DelaySoundStart">\tDelay Sound Start</string>
+    <string name="DelayMistStart">\tDelay Mist Start</string>
+    <string name="DelayLightStart">\tDelay Light Start</string>
+    <string name="Recipe">\tRecipe</string>
+    <string name="Oil1">\tOil1</string>
+    <string name="Oil2">\tOil2</string>
+    <string name="Oil3">\tOil3</string>
+    <string name="enterduration">enter duration</string>
+    <string name="colon">：</string>
+    <string name="notime"> - - </string>
+    <string name="nomini">- min</string>
+    <string name="clock_duration">Duration</string>
+    <string name="clock_elapsed">Elapsed</string>
+      <!-- 输入过滤 -->
+    <string name="filter_duration">0123456798</string>
+    
+</resources>

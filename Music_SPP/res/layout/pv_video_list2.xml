@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/pv_inbase_header" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/pv_video_list_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadingEdge="none"
+            android:overScrollMode="never"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/pv_five_type1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/zj_bg_search"
+                    android:orientation="vertical"
+                    android:padding="6dp" >
+
+                    <ImageView
+                        android:id="@+id/pv_pz02_video_iv"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:scaleType="fitXY" 
+                        android:src="@drawable/pv_t1" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/pv_pz02_video_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical"
+                            android:lines="1"
+                            android:text="Inter 7"
+                            android:textSize="22sp"
+                            android:textStyle="normal" />
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/pv_img_defult" 
+                            android:visibility="gone"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:ellipsize="end"
+                            android:gravity="left"
+                            android:lines="4"
+                            android:text="3 hours 45 min"
+                            android:textColor="@color/pv_green"
+                            android:textStyle="normal"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Sessions" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/pv_gray" />
+
+                        <cn.mb.ui.view.NoScrollListView
+                            android:id="@+id/pv_video_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:divider="@color/pv_gray"
+                            android:dividerHeight="1dp"
+                            android:fadeScrollbars="false"
+                            android:fadingEdge="none"
+                            android:listSelector="@drawable/list_item_selector2"
+                            android:overScrollMode="never"
+                            android:scrollbars="none" >
+                        </cn.mb.ui.view.NoScrollListView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal" 
+                             android:visibility="gone"
+                            >
+
+                            <Button
+                                android:id="@+id/pv_video_play_reset_btn"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@color/pv_gray_btn_bg"
+                                android:drawableRight="@drawable/pv_video_list_reset_icon"
+                                android:paddingRight="10dp"
+                                android:text="@string/pv_video_list_reset_icon" />
+
+                            <Button
+                                android:id="@+id/pv_video_play_resume_btn"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@color/pv_green_btn_bg"
+                                android:drawableRight="@drawable/pv_video_list_resume_icon"
+                                android:paddingRight="10dp"
+                                android:text="@string/pv_video_list_resume_icon" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?> 
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android"> 
+<solid android:color="@color/pv_gray_btn_bg"/> <!-- 自定义背景颜色 -->
+<stroke android:width="0.5dp"  android:color="@color/pv_gray_btn_bg"></stroke> 
+<corners android:radius="4dp" /> <!-- 自定义角度 -->
+
+</shape> 

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center" >
+
+    <LinearLayout
+        android:id="@+id/ui_alert_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:minWidth="200dp"
+        android:orientation="vertical"
+        android:scrollbars="vertical" >
+
+        <TextView
+            android:id="@+id/ui_alert_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="@string/prompt"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:minHeight="40dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/ui_alert_message"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/exit_app"
+                android:textColor="@color/pv_gray"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#D1D1D1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="40dp"
+            android:orientation="horizontal" 
+            android:layout_margin="4dp">
+
+            <Button
+                android:id="@+id/ui_alert_cancel_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/dialog_btn_select"
+                android:text="@string/cancel"
+                android:textSize="18sp"
+                android:textColor="@color/pv_blue_light" />
+            
+            <LinearLayout
+                android:id="@+id/ui_alert_single_line"
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="#D1D1D1"
+                android:orientation="horizontal" />
+            
+            <Button
+                android:id="@+id/ui_alert_neutral_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/dialog_btn_select"
+                android:text="@string/dismiss"
+                android:textSize="18sp"
+                android:textColor="@color/pv_blue_light" />
+
+            <LinearLayout
+                android:id="@+id/ui_alert_second_line"
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="#D1D1D1"
+                android:orientation="horizontal" />
+
+            <Button
+                android:id="@+id/ui_alert_confirm_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/dialog_btn_select"
+                android:text="@string/confirm"
+                android:textSize="18sp"
+                android:textColor="@color/pv_blue_light" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

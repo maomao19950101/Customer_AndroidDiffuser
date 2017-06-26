@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.android.demo.ui.OilRecipeListSortedActivity">
+
+<include layout="@layout/pv_inbase_header"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/oil_recipe_book"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/oil_recipe_book" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/oil_recipe_book"
+                android:paddingLeft="10dp"
+                android:text="Oil Recipes"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/oil_recipe_control_arrow"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_choice"
+                android:tag="false" />
+        </RelativeLayout>
+
+
+        <ListView
+            android:id="@+id/essential_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+             android:divider="@color/pv_gray"  
+        android:dividerHeight="1dp"
+            ></ListView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

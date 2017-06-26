@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal" >
+
+    <LinearLayout
+        android:id="@+id/pop_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/pickerview_btn_div"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" 
+        	android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/pickerViewCancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/btn_cancle" 
+                android:layout_weight="1"
+             android:background="@null"
+             android:layout_gravity="center_vertical"
+             android:gravity="center|center_horizontal"/>
+<View android:layout_width="1dp"
+    android:layout_height="match_parent"
+    android:background="@color/pv_gray"
+    />
+            <Button
+                android:id="@+id/pickerViewSubmit"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/btn_submit" 
+                 android:layout_weight="1"
+             android:background="@null"
+             android:layout_gravity="center_vertical"
+             android:gravity="center|center_horizontal"/>
+        </LinearLayout>
+<include layout="@layout/line_menu"/>
+        <LinearLayout
+              android:layout_marginTop="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pickerview_btn_div"
+            android:orientation="horizontal" >
+
+            <cn.mb.ui.view.PickerView
+                android:id="@+id/pv_View_normal1"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

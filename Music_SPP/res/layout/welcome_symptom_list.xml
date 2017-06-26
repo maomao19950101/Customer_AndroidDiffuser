@@ -1,0 +1,22 @@
+<RelativeLayout 
+     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    >
+
+<ListView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/welcome_symptom_list"
+        android:divider="@color/pv_gray"  
+        android:dividerHeight="1dp"
+           android:overScrollMode="never"
+                    android:scrollbars="none"
+    ></ListView>
+
+</LinearLayout>
+</RelativeLayout>

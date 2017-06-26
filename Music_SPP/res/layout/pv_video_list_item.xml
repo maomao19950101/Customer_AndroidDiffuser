@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="4dp"
+      >
+
+        <ImageView
+            android:id="@+id/pv_video_play_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/pv_video_oils_icon" 
+            android:layout_alignParentLeft="true"/>
+        
+        <TextView
+            android:id="@+id/pv_video_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/pv_video_play_iv"
+            android:lines="1"
+            android:layout_marginLeft="10dp"
+            android:ellipsize="end"
+            android:text="Day1 : Faith"
+            android:gravity="center_vertical"/>
+        <ImageView
+            android:id="@+id/pv_video_yun_iv"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/pv_img_defult" 
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"/>
+        
+        <TextView
+            android:id="@+id/pv_video_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/pv_video_yun_iv"
+            android:text="25min"
+             android:lines="1"
+            android:ellipsize="end"
+            android:gravity="center_vertical"/>
+    </RelativeLayout>
+
+</LinearLayout>

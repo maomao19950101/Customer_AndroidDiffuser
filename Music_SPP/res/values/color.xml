@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="pv_gray">#B3B3B3</color>
+    <color name="pv_blue_light">#5db1e2</color>
+    <color name="pv_red_light">#f15a24</color>
+    <color name="pv_black">#141414</color>
+    <color name="pv_white">#ffffff</color>
+    <color name="pv_gray_light">#F1F5FB</color>
+    <color name="pv_green">#259fa4</color>
+    <color name="pv_green_light">#5ac4f1</color>
+    <color name="pv_gray_95">#959595</color>
+    <color name="pv_gray_63">#636363</color>
+
+    <color name="title_background">#ff2c5d</color>
+    <color name="time_color">#B3B3B3</color>
+    <color name="half_tra">#c8000000</color>
+    <color name="province_line_border">#C7C7C7</color>
+    <!-- 黑色正常 -->
+    <color name="font_normal">#333333</color>
+    <color name="menu_bg">#3C3C44</color>
+    <color name="menu_font">#ffffff</color>
+    <color name="menu_line">#000000</color>
+    <color name="menu_item_current">#000000</color>
+    <color name="sport_top_bg">#f0CCCCCC</color>
+    <color name="text_color_red">#FF0000</color>
+    <color name="text_color_green">#008000</color>
+    <color name="navigation_white">#ffffff</color>
+    <color name="transparent">#95000000</color>
+    <color name="user_bg_red">#E40082</color>
+    <color name="user_title">#ffffff</color>
+
+
+    <color name="pv_all_bg">#ffffff</color>
+    <color name="pv_play_div_bg">#aa000000</color>
+
+    <color name="mediacontroller_bg_pressed">#ffefc1d9</color>
+    <color name="mediacontroller_bg">#99000000</color>
+
+    <color name="window_bg">#00FEFEFE</color>
+    <color name="pv_green_btn_bg">#649345</color>
+    <color name="pv_gray_btn_bg">#E6E6E6</color>
+    
+        <color name="bg_main">#00FFFFFF</color>
+    <color name="txt_main">#FFFFFF</color>
+    <color name="divider_main">#F0F0F0</color>
+    <color name="bg_theme">#9FD6AE</color>
+    <color name="color_white">#FFFFFF</color>
+      <color name="color_white_font">#FFFFFF</color>
+      
+      <color name="bg_main2">#B3B3B3</color>
+</resources>

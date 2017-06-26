@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/pv_inbase_header" />
+    
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    >
+    <LinearLayout
+            android:id="@+id/left_menu_item_03"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_alignParentTop="true"
+            android:paddingLeft="10dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/pv_color_picker_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:text="Color Picker" />
+
+        </LinearLayout>
+    <cn.mb.ui.view.ColorPickerView
+        android:id="@+id/pv_color_picker_view"
+        android:layout_width="300dp"
+        android:layout_height="280dp"
+        android:layout_gravity="center_horizontal" 
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+       >
+    </cn.mb.ui.view.ColorPickerView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="160dp"
+          android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/Brightness"
+            android:textColor="@color/txt_main" />
+
+        <SeekBar
+            android:id="@+id/pv_color_brightness_sb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="#00FFFFFF"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:max="100"
+            android:progress="100"
+            android:progressDrawable="@drawable/ic_sb_trans_bg"
+            android:thumb="@drawable/ic_sb_trans_thumb" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="100dp"
+          android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/Saturation"
+            android:textColor="@color/txt_main" />
+
+        <SeekBar
+             android:id="@+id/pv_color_saturation_sb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="#00FFFFFF"
+             android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:max="100"
+            android:progress="100"
+            android:progressDrawable="@drawable/ic_sb_trans_bg"
+            android:thumb="@drawable/ic_sb_trans_thumb" />
+    </LinearLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp" 
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:background="@color/pv_gray_btn_bg">
+
+        <View
+             android:id="@+id/pv_color_picker_preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_margin="4dp"
+            android:background="@drawable/oval_white" 
+            />
+        <TextView  android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="User Color"
+            android:layout_marginLeft="16dp"
+            android:layout_alignParentLeft="true"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/pv_gou_icon" 
+                android:layout_marginRight="16dp"
+                />
+    </RelativeLayout>
+</RelativeLayout>
+    
+
+</LinearLayout>

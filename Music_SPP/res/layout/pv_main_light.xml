@@ -1,0 +1,125 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00000000"
+    android:orientation="vertical"
+    tools:ignore="ContentDescription" >
+
+    <LinearLayout
+        android:id="@+id/pv_main_light_menu_div"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_menu_height"
+        android:background="@color/bg_main"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/pv_main_light_camera_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/im_btn_bg"
+            android:src="@drawable/ic_light_camera" />
+
+        <ImageButton
+            android:id="@+id/pv_main_light_movie_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/im_btn_bg"
+            android:src="@drawable/ic_light_picture" />
+
+        <ImageButton
+            android:id="@+id/pv_main_light_color_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+           android:background="@drawable/im_btn_bg"
+            android:src="@drawable/ic_light_colour" />
+
+        <ImageButton
+            android:id="@+id/pv_main_light_fav_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/im_btn_bg"
+            android:src="@drawable/ic_light_mark" />
+    </LinearLayout>
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+<LinearLayout 
+     android:id="@+id/pv_main_light_control_div"
+    android:layout_width="match_parent" 
+    android:layout_height="wrap_content" 
+    android:orientation="vertical"
+    android:visibility="gone"
+    >
+    <ImageButton
+        android:id="@+id/pv_main_light_close_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_gravity="right"
+        android:paddingLeft="30dp"
+        android:paddingRight="5dp"
+        android:paddingTop="10dp"
+        android:background="@drawable/im_btn_bg"
+        android:src="@drawable/ic_close" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="@dimen/height_itemdspace_main"
+        android:layout_marginTop="@dimen/height_itemdspace_main"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/Color"
+            android:textColor="@color/txt_main" />
+
+        <ImageButton
+            android:id="@+id/pv_main_light_control_color_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rect_getcolor" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="@dimen/height_itemdspace_main"
+        android:layout_marginTop="@dimen/height_itemdspace_main"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/Brightness"
+            android:textColor="@color/txt_main" />
+
+        <SeekBar
+             android:id="@+id/pv_main_light_control_brightness_sb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00FFFFFF"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:max="10"
+            android:progressDrawable="@drawable/ic_sb_trans_bg"
+            android:thumb="@drawable/ic_sb_trans_thumb" />
+    </LinearLayout>
+</LinearLayout>
+</RelativeLayout>
+</LinearLayout>

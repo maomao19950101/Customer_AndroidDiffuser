@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/all_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/pv_inbase_header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical" >
+<View android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="0.2"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:text="@string/pv_video_oils_set"
+            android:textSize="36sp" />
+<View android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="0.5"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:text="@string/pv_video_oils_desc2" 
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+<View android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="0.4"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_marginTop="15dp">
+
+            <TextView
+                 android:id="@+id/pv_oil1name_iv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="@string/pv_video_oils_bergamot"
+                android:textSize="24sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+             android:layout_marginTop="15dp">
+
+            <TextView
+                 android:id="@+id/pv_oil2name_iv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="@string/pv_video_oils_lavendar"
+                android:textSize="24sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+             android:layout_marginTop="15dp">
+
+            <TextView
+                 android:id="@+id/pv_oil3name_iv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="@string/pv_video_oils_patchouli"
+                android:textSize="24sp" />
+
+        </RelativeLayout>
+<ImageView 
+    android:id="@+id/pv_oils_rec_iv"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:scaleType="fitXY"
+    android:background="@drawable/zz_immune_support"
+    />
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/pv_video_oils_play"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:drawableRight="@drawable/pv_video_oils_icon"
+            android:text="Start    "
+            android:textSize="22sp" 
+              android:background="@color/pv_green_btn_bg" 
+            android:textColor="@color/pv_white"
+            android:layout_marginBottom="30dp"
+                 android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>

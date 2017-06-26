@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:id="@+id/oil_recipe_img_center"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/pv_img_defult" 
+            android:padding="5dp"/>
+
+        <ImageView
+            android:id="@+id/oil_recipe_img_right"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_toRightOf="@id/oil_recipe_img_center"
+            android:src="@drawable/pv_img_defult" 
+            android:padding="5dp"/>
+
+
+        <ImageView
+            android:id="@+id/oil_recipe_img_left"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_toLeftOf="@id/oil_recipe_img_center"
+            android:src="@drawable/pv_img_defult" 
+            android:padding="5dp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="50dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/oil_recipe_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Herbal Citrus Soothe"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/oil_recipe_oilOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Cedarwood" />
+
+            <TextView
+                android:id="@+id/oil_recipe_oilTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Marjoram" />
+
+            <TextView
+                android:id="@+id/oil_recipe_oilThree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Bergamot" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:id="@+id/oil_recipe_store"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/pv_main_fav" 
+                android:background="@drawable/im_btn_bg"/>
+
+            <ImageView
+                android:id="@+id/oil_recipe_del"
+                android:layout_width="wrap_content"
+         android:layout_height="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/pv_fav_del" 
+                android:background="@drawable/im_btn_bg"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

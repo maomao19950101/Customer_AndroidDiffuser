@@ -1,0 +1,22 @@
+<component name="libraryTable">
+  <library name="dexedLibs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Music_SPP/bin/dexedLibs/xUtils-2.6.5-48fb16e2b3573d862200b775615f6b0f.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Music_SPP/bin/dexedLibs/org.apache.http.legacy-7594a523d40ec75f1eb2f10baaafaa56.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Music_SPP/bin/dexedLibs/gson-2.2.4-575e0705a46e11cec36999a7c9f31bd7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Music_SPP/bin/dexedLibs/jsoup-1.7.2-b1313b82e10eac357c8d9a622b4fc737.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Music_SPP/bin/dexedLibs/gson-2.2.4-07564ecd2c479897f12853200ca48967.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Music_SPP/bin/dexedLibs/android-support-v4-9dcac025574d211e66396165ca698e02.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Music_SPP/bin/dexedLibs/android-support-v4-05fb664ec443da7ca7ddef7433c83bd0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Music_SPP/bin/dexedLibs/jsoup-1.7.2-75389f5be6abf55757fad04ce3a6a96d.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Music_SPP/bin/dexedLibs/volley-3b4f7ee1f7f325d6a6da43ecfbe1cfb2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Music_SPP/bin/dexedLibs/nineoldandroids-2.4.0-6419c0cea56e01c2c75dd0ba3da21c90.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Music_SPP/bin/dexedLibs/xUtils-2.6.5-3b05e09754a2ad04f829e9860f4de8fb.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Music_SPP/bin/dexedLibs/nineoldandroids-2.4.0-2bfdf3a5800f8fda92c2942e3169dc57.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Music_SPP/bin/dexedLibs/volley-06132f8112e56c7ca8211138e294d3b0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Music_SPP/bin/dexedLibs/org.apache.http.legacy-7a2ba72e1ed4ceb757c6b86a89fe7f68.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

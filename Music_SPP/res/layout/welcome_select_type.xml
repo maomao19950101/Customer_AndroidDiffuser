@@ -1,0 +1,90 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blur_silent_cloud"
+    android:orientation="vertical"
+   android:gravity="center" >
+    <View 
+      android:layout_weight="1"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      />
+   <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+       >
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+           android:orientation="vertical" >
+
+           <ImageButton
+               android:id="@+id/image_btn1"
+               android:layout_width="56dp"
+               android:layout_height="56dp"
+               android:background="@null"
+               android:onClick="SSS"
+               android:scaleType="centerInside"
+               android:src="@drawable/oil" />
+
+           <TextView
+               android:id="@+id/ItemText"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/ItemImage"
+               android:layout_centerHorizontal="true"
+               android:text="Essrntial  Oil"
+               android:textColor="@color/pv_white" >
+           </TextView>
+
+           <ImageButton
+               android:id="@+id/image_btn2"
+               android:layout_width="56dp"
+               android:layout_height="56dp"
+               android:layout_marginTop="40dp"
+               android:background="@null"
+               android:onClick="SSS2"
+               android:scaleType="centerInside"
+               android:src="@drawable/heart" />
+
+           <TextView
+               android:id="@+id/ItemText1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/ItemImage"
+               android:layout_centerHorizontal="true"
+               android:text="Ailment"
+               android:textColor="@color/pv_white" >
+           </TextView>
+
+           <ImageButton
+               android:id="@+id/image_btn3"
+               android:layout_width="56dp"
+               android:layout_height="56dp"
+               android:layout_marginTop="40dp"
+               android:background="@null"
+               android:onClick="SSS3"
+               android:scaleType="centerInside"
+               android:src="@drawable/treatment" />
+
+           <TextView
+               android:id="@+id/ItemText2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/ItemImage"
+               android:layout_centerHorizontal="true"
+               android:text="Treatment"
+               android:textColor="@color/pv_white" >
+           </TextView>
+       </LinearLayout>
+       </RelativeLayout>
+  <View 
+      android:layout_weight="1"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      />
+</LinearLayout>

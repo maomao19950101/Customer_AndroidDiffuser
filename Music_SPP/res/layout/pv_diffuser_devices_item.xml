@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+<ImageView
+                android:id="@+id/d_h"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                 android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+                android:src="@drawable/pv_left_dc_icon"
+                />
+    <TextView
+        android:id="@+id/aidu_devices_list_name"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:text="TTTTTT" 
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textStyle="bold"
+       android:layout_toRightOf="@id/d_h"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"/>
+
+
+    <TextView
+        android:id="@+id/aidu_devices_list_notic"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+          android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+       	android:layout_toRightOf="@id/aidu_devices_list_name"
+        android:text=" 1111" 
+        android:textSize="12sp"
+        />
+</RelativeLayout>

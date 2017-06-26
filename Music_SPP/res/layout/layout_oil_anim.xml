@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="ContentDescription" >
+
+    <ImageView
+        android:id="@+id/layout_oil_anim_iv_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true" 
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_line" />
+
+    <ImageView
+        android:id="@+id/layout_oil_anim_iv_flower1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_flower_lightblue"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/layout_oil_anim_iv_flower2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="40dp"
+        android:src="@drawable/ic_flower_blue"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/layout_oil_anim_iv_flower3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="80dp"
+        android:src="@drawable/ic_flower_red"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/layout_oil_anim_iv_flower4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="120dp"
+        android:src="@drawable/ic_flower_lightblue"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/layout_oil_anim_iv_flower5"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="160dp"
+        android:src="@drawable/ic_flower_blue"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/layout_oil_anim_iv_flower6"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="200dp"
+        android:src="@drawable/ic_flower_red"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/layout_oil_anim_iv_flower7"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="220dp"
+        android:src="@drawable/ic_flower_lightblue"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/layout_oil_anim_iv_flower8"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="240dp"
+        android:src="@drawable/ic_flower_blue"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/layout_oil_anim_iv_flower9"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="260dp"
+        android:src="@drawable/ic_flower_red"
+        android:visibility="gone" />
+
+</RelativeLayout>

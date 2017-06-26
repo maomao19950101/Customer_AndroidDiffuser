@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="libs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Music_SPP/libs/xUtils-2.6.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Music_SPP/libs/jsoup-1.7.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Music_SPP/libs/org.apache.http.legacy.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Music_SPP/libs/android-support-v4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Music_SPP/libs/gson-2.2.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Music_SPP/libs/nineoldandroids-2.4.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Music_SPP/libs/volley.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal" 
+   >
+
+    <ImageView
+        android:id="@+id/notic_img"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:contentDescription="notic_img"
+        android:src="@drawable/pv_notic"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:id="@+id/notic_txt"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" 
+        android:text="notic"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/pv_gray"
+        android:gravity="center_vertical"
+       />
+
+</LinearLayout>

@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.mb.hk.music"
+    android:versionCode="1"
+    android:versionName="1.0.170327">
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+	<uses-permission android:name="android.permission.WAKE_LOCK"></uses-permission>  
+    <application
+        android:name="cn.mb.app.AppAplication"
+        android:allowBackup="true"
+       
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/NoTitle">
+        <activity
+            android:name="cn.mb.ui.common.WelcomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.mb.ui.activity.WelcomeVideoActivity"
+            android:label="@string/app_name"
+          
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.mb.ui.common.GuideActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.mb.ui.activity.MainActivity"
+            android:label="@string/blankDesc"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+ 
+        <activity
+            android:name="cn.mb.ui.activity.SearchDevicesActivity"
+            android:label="@string/blankDesc"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.mb.ui.activity.DiffUserActivity"
+            android:label="@string/blankDesc"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.mb.ui.activity.MistActivity"
+            android:label="@string/blankDesc"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.mb.ui.activity.ProductActivity"
+            android:label="@string/blankDesc"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.mb.ui.activity.MusicActivity"
+            android:label="@string/blankDesc"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.mb.ui.activity.LightSetActivity"
+            android:label="@string/blankDesc"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.mb.ui.activity.FavoriteListActivity"
+            android:label="@string/blankDesc"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.mb.ui.activity.MusicListActivity"
+            android:label="@string/blankDesc"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vooda.base.BrowseActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.mb.ui.activity.FiveSensesActivity"
+            android:label="@string/blankDesc"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.mb.ui.activity.VideoListActivity"
+            android:label="@string/blankDesc"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.mb.ui.activity.ColorPickerActivity"
+            android:label="@string/blankDesc"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.mb.ui.activity.CameraColorPickerActivity"
+            android:label="@string/blankDesc"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.mb.ui.activity.ClockSetActivity"
+            android:label="@string/blankDesc"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        
+          <activity
+            android:name="cn.mb.ui.activity.VideoOilsActivity"
+            android:label="@string/blankDesc"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+          <activity
+            android:name="cn.mb.ui.activity.VideoOilsActivity2"
+            android:label="@string/blankDesc"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+          <activity
+            android:name="cn.mb.ui.activity.OilTreatmentsActivity"
+            android:label="@string/blankDesc"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+      <!--   <activity
+            android:name="io.vov.vitamio.activity.InitActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:launchMode="singleTop"
+            android:process=":hkvideo"
+            android:windowSoftInputMode="stateAlwaysHidden" /> -->
+        <activity
+            android:name="cn.mb.ui.activity.VideoPlayerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/blankDesc"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+		<activity
+            android:name="cn.mb.ui.activity.VideoSetActivity"
+            android:label="@string/blankDesc"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.mb.ui.activity.MotorActivity"
+            android:label="@string/blankDesc"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.mb.ui.activity.OilRecipeListActivity"
+            android:label="@string/blankDesc"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+                <activity
+            android:name="cn.mb.ui.activity.OilSortMenuActivity"
+            android:label="@string/blankDesc"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+                        <activity
+            android:name="cn.mb.ui.activity.OilRecipeListNameActivity"
+            android:label="@string/blankDesc"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+                        
+                                      <activity
+            android:name="cn.mb.ui.activity.WelcomeVideoBannerListActivity"
+            android:label="@string/blankDesc"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />     
+            
+                                        <activity
+            android:name="cn.mb.ui.activity.Pz02VideoListActivity"
+            android:label="@string/blankDesc"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />    
+            
+                                                                      <activity
+            android:name="cn.mb.ui.activity.VideoRecipeListPz02Activity"
+            android:label="@string/blankDesc"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />   
+            
+                                                                      
+                                                                                    <activity
+            android:name="cn.mb.ui.activity.WelcomeSelectTypeActivity"
+            android:label="@string/blankDesc"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />                                                           
+           <activity
+            android:name="cn.mb.ui.activity.WelcomeSymptomActivity"
+            android:label="@string/blankDesc"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" /> 
+            <activity
+            android:name="cn.mb.ui.activity.WelcomeSymptomListActivity"
+            android:label="@string/blankDesc"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" /> 
+            <activity
+            android:name="cn.mb.ui.activity.WelcomeSelectProductActivity"
+            android:label="@string/blankDesc"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />  
+            <activity
+            android:name="cn.mb.ui.activity.WelcomeOilActivity"
+            android:label="@string/blankDesc"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />  
+            <activity
+            android:name="cn.mb.ui.activity.WelcomeOilListActivity"
+            android:label="@string/blankDesc"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />  
+            <activity
+            android:name="cn.mb.ui.activity.WelcomeOilDetailActivity"
+            android:label="@string/blankDesc"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />  
+            <activity
+            android:name="cn.mb.ui.activity.WelcomeSymptomDetailActivity"
+            android:label="@string/blankDesc"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" /> 
+            
+               <activity
+            android:name="cn.mb.ui.activity.InfoActivity"
+            android:label="@string/blankDesc"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" /> 
+               <activity
+            android:name="cn.mb.ui.activity.SettingActivity"
+            android:label="@string/blankDesc"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" /> 
+               <activity
+            android:name="cn.mb.ui.activity.ProfileActivity"
+            android:label="@string/blankDesc"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" /> 
+            
+
+        <service android:name="com.simple.player.service.MediaPlayerService"></service>
+        <service android:name="cn.sixpower.download.VideoDownloadService"></service>
+  <!--  -->      <service android:name="cn.sixpower.spp.SppService"></service>
+        <service android:name="cn.sixpower.player.view.PlayerService" />
+        <!--  android:process=":hkvideo"  <service android:name="org.pcgy.bluetooth.BleReconnectService" ></service>       android:process=":hkvideo" -->
+    </application>
+
+</manifest>

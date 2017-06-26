@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="0dp"
+>
+<RelativeLayout
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_menu_height"
+        android:background="@color/pv_green"
+       >
+
+        <ImageView
+            android:id="@+id/sys_header_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:contentDescription="@string/blankDesc" 
+            />
+
+        <TextView
+             android:id="@+id/sys_header_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="title"
+            android:textColor="@color/pv_green"
+              android:textStyle="bold"/>
+        
+        <ImageButton
+            android:id="@+id/sys_header_rightbtn_ib"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_right"
+            android:visibility="gone"
+           />
+          <View  android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/pv_gray" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</merge>

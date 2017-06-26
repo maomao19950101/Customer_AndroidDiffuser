@@ -1,0 +1,247 @@
+package cn.sixpower.app;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import cn.sixpower.hk.music.R;
+import cn.sixpower.model.VideoInfoConfig;
+
+public class AppConstant {
+    public static final String ENCODING = "UTF-8";
+    public static final String DB_NAME = "hk_music.db";//"aidu.db";
+
+    //wap的ip信息
+    public static String PROXY_IP = "";
+
+    //wap的端口信息
+    public static int PROXY_PORT = 0;
+
+    public static final String CACHE_IMG = "/YJKJ/backup/";
+
+
+    public static final int DOWNLOAD_MAX_THREAD = 10;
+
+    public class Action {
+        /*public static final String SYNC_HEART_OPERATOR="action.mz.xinlv.syncheart";
+        public static final String SYNC_STEP_OPERATOR="action.mz.xinlv.syncstep";
+		
+		
+		public static final String SYNC_HEART_OPERATOR_RECEIVE="action.mz.xinlv.syncheart.receive";
+		public static final String SYNC_STEP_OPERATOR_RECEIVE="action.mz.xinlv.syncstep.receive";*/
+
+    	
+    	public static final String PLAY_VIDEO_TIME_ACTION = "action.mz.xinlv.time";
+    	public static final String PLAY_VIDEO_PLAY_ACTION = "action.mz.xinlv.play";
+    }
+
+    public class KEY {
+        public static final String LIGHT_ONOFF = "light_onoff";
+        public static final String LIGHT_ONOFF_ON = "light_onoff_on";
+        public static final String LIGHT_ONOFF_OFF = "light_onoff_off";
+
+
+        public static final String MUSIC_ONOFF = "music_onoff";
+        public static final String MUSIC_ONOFF_ON = "music_onoff_on";
+        public static final String MUSIC_ONOFF_OFF = "music_onoff_off";
+
+        public static final String FOG_ONOFF = "fog_onoff";
+        public static final String FOG_ONOFF_ON = "fog_onoff_on";
+        public static final String FOG_ONOFF_OFF = "fog_onoff_off";
+
+        public static final String MIST_WORK_TIME = "mist_work_time";
+        public static final String MIST_START_TIME = "mist_start_time";
+        public static final String MIST_SLEEP_TIME = "mist_sleep_time";
+
+        public static final String DEVICE_NAME2 = "device_name";
+
+
+        public static final String IS_FIRST_GUIDE = "is_first_guide";
+        
+        
+        //
+        public static final String CLOCK_START_TIME="clock_start_time";
+        public static final String CLOCK_END_TIME="clock_end_time";
+        public static final String CLOCK_DELAY_SOUND_START="clock_dss_time";
+        public static final String CLOCK_DELAY_MIST_START="clock_dms_time";
+        public static final String CLOCK_DELAY_LIGHT_START="clock_dls_time";
+        public static final String CLOCK_DURATION="clock_duration";
+        public static final String MIST_TIME="mist_time";
+        public static final String MIST_INTERVAL="mist_interval";
+        
+        
+        public static final String LAST_COLOR_RGB="application_color_rgb";
+    }
+
+
+    /**
+     * Created by lihongshi on 16/1/25.
+     * 首先, 請在每次連接成功設備, 先將手机上的時間送到設備
+     * 指令 0x09
+     * BA 0x09 hh mm AA 0F FF EE 0D 0A
+     * <p/>
+     * 設定霧化器工作時間
+     * 指令0x05
+     * BA 0x05 hh mm hh mm FF EE 0D 0A
+     * 第一組的 hh mm 是時鐘 例如 20 : 30
+     * 第二組的 hh mm 是工作時間長度  小時 : 分鐘  例如:  3小時 20 分鐘
+     * BA 0x05 20 30 03 20 FF EE 0D 0A
+     * <p/>
+     * 因為現在客戶的介面上是設立工作時間及間歇開關時間
+     * 所以用戶選好工作時間後, 當按定時開,  APPS 將當前的時間為開始時間, 工作時間為用戶巳設定好的時間
+     * <p/>
+     * 間於工作間歇時間設定
+     * 指令 0x03
+     * BA 0x03 AA AA mm mm FF EE 0D 0A
+     * 例如 : 開5分鐘 停6 分鐘
+     * BA 0x03 AA AA 05 06 FF EE 0D 0A
+     * <p/>
+     * 由於客戶現在只提供客人設定一個時間, 故所以只會開和停的時間是相同.
+     * 所以現在只需 :  BA 0x03 AA AA 10 10 FF EE 0D 0A  工作10分鐘停10分鐘
+     * <p/>
+     * 注意 : APPS 只需要把以上指令傳到設備就可以.
+     */
+    public class HardwareCommands {
+        public static final String CMD_PHONE_TIME = "BA09hhmmss0FFFEE0D0A";//手机上的時間送到設備 指令 0x09
+        public static final String CMD_ATOMIZATION_WORK_TIME = "BA05hhmmhhmmFFEE0D0A";//設定霧化器工作時間 指令0x05  hhmm 开始工作时间 hh 99 (*5)工作时长mm(99*5)间歇时间
+        public static final String CMD_INTERMITTENT_WORK_TIME = "BA03AAAAmmmmFFEE0D0A";//間於工作間歇時間設定 指令 0x03  mmmm 持续与间歇时间分钟
+        public static final String CMD_MIST_ON = "BA04AAAA010FFFEE0D0A";//雾化开启命令 BA04aaaa010fFFEE0D0A  BA04AA0F0101FFEE0D0A
+        public static final String CMD_MIST_OFF = "BA04AAAA000FFFEE0D0A";//雾化关闭命令 BA04aaaa000fFFEE0D0A BA04AA0F0001FFEE0D0A
+
+        public static final String CMD_LIGHT_ON="BA0EAAAA010FFFEE0D0A";
+        public static final String CMD_LIGHT_OFF="BA0EAAAA000FFFEE0D0A";
+        
+        public static final String CMD_MOTOR_ON = "BA16AAAA000FFFEE0D0A";//00<=NN<=99
+        public static final String CMD_MOTOR_OFF = "BA16AAAA990FFFEE0D0A";//00<=NN<=99
+        public static final String CMD_MOTOR1 = "BA16AAAANN0FFFEE0D0A";//00<=NN<=99
+        public static final String CMD_MOTOR2 = "BA17AAAANN0FFFEE0D0A";//00<=NN<=99
+        public static final String CMD_MOTOR3 = "BA18AAAANN0FFFEE0D0A";//00<=NN<=99
+
+        public static final String CMD_RGB1="BA12FFFFFF0FFFEE0D0A";//FFFFFF
+        public static final String CMD_RGB2="BA13FFFFFF0FFFEE0D0A";//FFFFFF
+        public static final String CMD_RGB3="BA14FFFFFF0FFFEE0D0A";//FFFFFF
+        public static final String CMD_RGB_LIGHT_MODEL="BA15AAAANN0FFFEE0D0A";//NN 00~0F
+        public static final String CMD_RGB_CLEAR="BA11aaaaaa0FFFEE0D0A";
+        
+        public static final String CMD_RGB_SAVE="BA0FEEFFFF0FFFEE0D0A";//FFFFFF
+        public static final String CMD_RGB_MODEL="BA10AAAANN0FFFEE0D0A";//NN 00~07
+        
+        public static final String CMD_MUSIC_ON="BA0caaaa000fFFEE0D0A";//
+        public static final String CMD_MUSIC_OFF="BA0caaaa010fFFEE0D0A";//
+
+        public static final String CMD_READ_STATUS="BA02AAAANN0FFFEE0D0A";//NN CMD
+        
+//        public static final String CMD_START_END_TIME="BA07HHMMHHMMFFEE0D0A";//hhmm starttime, hhmm endtime
+        public static final String CMD_START_END_TIME="BA07HHMMMMFFFFEE0D0A";//hhmm starttime, hhmm endtime 2017/3/23 修改
+        public static final String CMD_DELAY_SOUND_TIME="BA09HHMMAA0FFFEE0D0A";//hhmm starttime, hhmm endtime
+        public static final String CMD_DELAY_MIST_TIME="BA0AHHMMAA0FFFEE0D0A";//hhmm starttime, hhmm endtime
+        public static final String CMD_DELAY_LIGHT_TIME="BA0BHHMMAA0FFFEE0D0A";//hhmm starttime, hhmm endtime
+        
+        public static final String CMD_DURATION_LIGHT_TIME="BA23MMMMFF0FFFEE0D0A";//BA 0x23 AA AA FF 0F 0D 0A
+        
+        public static final String CMD_OPEN="BA01AAAA010FFFEE0D0A";//NN CMD
+        public static final String CMD_CLOSE="BA01AAAA000FFFEE0D0A";//NN CMD
+    }
+    
+    
+	public static int bannerDataList[] = new int[] {  
+			R.drawable.oo_silent_cloud,
+			R.drawable.oo_mountain_lake,
+			R.drawable.oo_rain_on_leaves, 
+			R.drawable.oo_sunset_beach, 
+			R.drawable.oo_planet_earth, 
+			R.drawable.oo_woodland_lake ,
+			R.drawable.oo_fireplace
+			};
+	public static int bannerDarkDataList[] = new int[] {  
+			R.drawable.dark_silent_cloud,
+			R.drawable.dark_mountain_lake,
+			R.drawable.dark_rain_on_leaves, 
+			R.drawable.dark_sunset_beach, 
+			R.drawable.dark_planet_earth, 
+			R.drawable.dark_woodland_lake ,
+			R.drawable.dark_fireplace
+			};
+
+	public static String videoNameDataList[] = new String[] { 
+			"silent_cloud.mp4",
+			"mountain_lake1000.mp4",
+			"rain_on_leave1000.mp4",
+			"sunset_beach.mp4",
+			"planet_earth.mp4", 
+			"woodland_lake1000.mp4",
+			"plains_of_wheat.mp4"
+			};
+
+	public static int bgDataList[] = new int[] {  
+			R.drawable.blur_silent_cloud,
+			R.drawable.blur_mountain_lake,
+			R.drawable.blur_rain_on_leaves,
+			R.drawable.blur_planet_earth, 
+			R.drawable.blur_woodland_lake,
+			R.drawable.blur_sunset_beach, 
+			R.drawable.blur_fireplace
+			 };
+	public static List<VideoInfoConfig> getConfigList() {
+		List<VideoInfoConfig> listConfig = new ArrayList<VideoInfoConfig>();
+		VideoInfoConfig config;
+        
+        config = new VideoInfoConfig();//silent_cloud
+        config.setMistTime(1);
+        config.setRgb1("B5F8FC");
+        config.setRgb2("6D9DE4");
+        config.setRgb3("188CEE");
+        config.setRgbModel(2);
+        listConfig.add(config);
+       
+        config = new VideoInfoConfig();//mountain_lake1000
+        config.setMistTime(1);
+        config.setRgb1("94E3FF");
+        config.setRgb2("3D7EBC");
+        config.setRgb3("BDD7B5");
+        config.setRgbModel(2);
+        listConfig.add(config);
+        
+        config = new VideoInfoConfig();//rain_on_leave1000
+        config.setMistTime(1);
+        config.setRgb1("6C8B77");
+        config.setRgb2("A9D5C6");
+        config.setRgb3("85AD58");
+        config.setRgbModel(2);
+        listConfig.add(config);
+        
+        config = new VideoInfoConfig();//sunset_beach
+        config.setMistTime(1);
+        config.setRgb1("FCB96D");
+        config.setRgb2("FFF6AB");
+        config.setRgb3("E88746");
+        config.setRgbModel(2);
+        listConfig.add(config);
+        
+        config = new VideoInfoConfig();//planet_earth
+        config.setMistTime(1);
+        config.setRgb1("0C3885");
+        config.setRgb2("75B1C9");
+        config.setRgb3("86C8E6");
+        config.setRgbModel(3);
+        listConfig.add(config);
+        
+        config = new VideoInfoConfig();//woodland_lake1000
+        config.setMistTime(2);
+        config.setRgb1("86C8E6");
+        config.setRgb2("DB5253");
+        config.setRgb3("AD6BD0");
+        config.setRgbModel(1);
+        listConfig.add(config);
+        
+        config = new VideoInfoConfig();//oo_fireplace
+        config.setMistTime(1);
+        config.setRgb1("D7690F");
+        config.setRgb2("DFC61C");
+        config.setRgb3("96470E");
+        config.setRgbModel(3);
+        listConfig.add(config);
+       
+        
+        return listConfig;
+    }
+}

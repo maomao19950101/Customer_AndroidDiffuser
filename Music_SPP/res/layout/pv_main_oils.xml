@@ -1,0 +1,315 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00000000"
+    android:orientation="vertical"
+    android:id="@+id/main"
+    tools:ignore="ContentDescription" >
+
+    <LinearLayout
+        android:id="@+id/pv_main_oils_menu_div"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_menu_height"
+        android:background="@color/bg_main"
+        android:gravity="center"
+        android:orientation="horizontal" 
+        >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+             android:id="@+id/pv_main_oils_control_div"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_main"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:ignore="ContentDescription"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="@dimen/height_itemdspace_main"
+                android:layout_marginTop="@dimen/height_itemdspace_main"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/Recipe"
+                    android:textColor="@color/txt_main" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <ImageView
+                            android:id="@+id/layout_oil_picture_iv_recipe_choice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="5dp"
+                            android:scaleType="fitEnd"
+                            android:src="@drawable/ic_choice" />
+
+                        <TextView
+                            android:id="@+id/pv_main_oils_control_recipe_name_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="bottom"
+                            android:padding="2dp"
+                            android:text="PERSON"
+                            android:textColor="@color/txt_main" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_divider_main"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/divider_main" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center_vertical"
+                    android:text="@string/Oil1"
+                    android:textColor="@color/txt_main" />
+<TextView
+    android:id="@+id/pv_main_oils_control_recipe_oil1_sb_value"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="10"
+                    android:textColor="@color/txt_main" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp" >
+
+                        <ImageView
+                            android:id="@+id/layout_oil_picture_iv_oil1_choice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="5dp"
+                            android:scaleType="fitEnd"
+                            android:src="@drawable/ic_choice" />
+
+                        <TextView
+                            android:id="@+id/pv_main_oils_control_recipe_oil1_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="bottom"
+                            android:padding="2dp"
+                            android:text="Cedarwood"
+                            android:textColor="@color/txt_main" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_divider_main"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/divider_main" />
+                    </RelativeLayout>
+
+                    <SeekBar
+                        android:id="@+id/pv_main_oils_control_recipe_oil1_sb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="#00FFFFFF"
+                        android:max="99"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:progress="10"
+                        android:progressDrawable="@drawable/ic_sb_trans_bg"
+                        android:thumb="@drawable/ic_sb_trans_thumb" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center_vertical"
+                    android:text="@string/Oil2"
+                    android:textColor="@color/txt_main" />
+<TextView
+    android:id="@+id/pv_main_oils_control_recipe_oil2_sb_value"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="10"
+                    android:textColor="@color/txt_main" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp" >
+
+                        <ImageView
+                            android:id="@+id/layout_oil_picture_iv_oil2_choice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="5dp"
+                            android:scaleType="fitEnd"
+                            android:src="@drawable/ic_choice" />
+
+                        <TextView
+                            android:id="@+id/pv_main_oils_control_recipe_oil2_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="bottom"
+                            android:padding="2dp"
+                            android:text="Marjoram"
+                            android:textColor="@color/txt_main" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_divider_main"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/divider_main" />
+                    </RelativeLayout>
+
+                    <SeekBar
+                        android:id="@+id/pv_main_oils_control_recipe_oil2_sb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="#00FFFFFF"
+                        android:max="99"
+                         android:progress="10"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:progressDrawable="@drawable/ic_sb_trans_bg"
+                        android:thumb="@drawable/ic_sb_trans_thumb" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center_vertical"
+                    android:text="@string/Oil3"
+                    android:textColor="@color/txt_main" />
+<TextView
+    android:id="@+id/pv_main_oils_control_recipe_oil3_sb_value"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="10"
+                    android:textColor="@color/txt_main" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp" >
+
+                        <ImageView
+                            android:id="@+id/layout_oil_picture_iv_oil3_choice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="5dp"
+                            android:scaleType="fitEnd"
+                            android:src="@drawable/ic_choice" />
+
+                        <TextView
+                            android:id="@+id/pv_main_oils_control_recipe_oil3_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="bottom"
+                            android:padding="2dp"
+                            android:text="none"
+                            android:textColor="@color/txt_main" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_divider_main"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/divider_main" />
+                    </RelativeLayout>
+
+                    <SeekBar
+                        android:id="@+id/pv_main_oils_control_recipe_oil3_sb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="#00FFFFFF"
+                        android:max="99"
+                         android:progress="10"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:progressDrawable="@drawable/ic_sb_trans_bg"
+                        android:thumb="@drawable/ic_sb_trans_thumb" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
